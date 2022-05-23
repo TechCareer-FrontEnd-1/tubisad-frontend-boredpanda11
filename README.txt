@@ -7,8 +7,7 @@ non-sematic yapılarda açık şekilde belirli değildir.
 
 jira nedir?
 
-jira temelde bug ve görev takibi aracıdır. iş elemanlarının bug ya da istenen bir özelliğe bağlı bir iş olduğuna bakmaksızın anlaşılır ve takibi kolay bir biçimde 
-görülmesini sağlar. temel işlevinden evrilerek çok işlevli bir proje yönetim ve takibi aracı haline gelmiştir.
+jira temelde bug ve görev takibi aracıdır. iş elemanlarının bug ya da istenen bir özelliğe bağlı bir iş olduğuna bakmaksızın anlaşılır ve takibi kolay bir biçimde görülmesini sağlar. temel işlevinden evrilerek çok işlevli bir proje yönetim ve takibi aracı haline gelmiştir.
 
 ascii karakter  yapıları -- unicode yapıları?
 
