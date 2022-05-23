@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta name="author" content="Utku Kantekin" />
+    <meta name="description" content="html body of registry UI" />
+
+    <title>Register</title>
+    <link rel="shortcut icon" href="/icons/registry.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Codes start-->
+    <!-- Link to github -->
+    <header style="text-align:center">
+      <p>
+        For more information please visit
+        <a
+          href="https://github.com/boredpanda11/tubisad"
+          title="my github"
+          target="_blank"
+          >here</a
+        >.
+      </p>
+    </header>
+
+    <!-- Main Card -->
+    <div class="main" style="text-align: center">
+      
+      <h2>Create Account</h2>
+      <p>Get started with your free account</p>
+
+      <!-- Linked Registry -->
+      <div class="link" id="links">
+        <a href="http://twitter.com">Login via Twitter</a>
+        <a href="http://facebook.com">Login via Facebook</a>
+      </div>
+
+      <p
+        style="
+          text-align: center;
+          border-bottom: 1px solid #000;
+          line-height: 0.1px;
+        "
+      >
+        <span style="background-color: #fff; padding: 0px 5px">OR</span>
+      </p>
+
+      <!-- Regitry Form-->
+      <div class="form">
+        <form action="#" method="get" autocomplete="on">
+          <label for="fname"></label>
+          <input
+            type="text"
+            name="fName"
+            id="fname"
+            placeholder="Full Name"
+            required
+          /><br />
+
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          /><br />
+
+          <select name="countryCode" id="">
+            <option value="44">+44</option>
+            <option value="1">+1</option>
+            <option value="90">+90</option>
+          </select>
+          <input
+            type="text"
+            name="number"
+            id="number"
+            pattern="[0-9]+"
+            placeholder="Tel. Number"
+            required
+          /><br />
+
+          <select name="jobType" id="">
+            <option value="">Select Job Type</option>
+            <option value="Business">Business and Finance</option>
+            <option value="Education">Education and Training</option>
+            <option value="Government">
+              Government and Public Administration
+            </option>
+            <option value="Science">Health - Science</option></select
+          ><br />
+
+          <label for="password"></label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Create Password"
+            required
+          /><br />
+
+          <input type="submit" value="SUBMIT" />
+          <input type="reset" value="CLEAR" />
+        </form>
+      </div>
+    </div>
+
+    <footer style="position: absolute; bottom: 5px">
+    <!-- Citation -->
+    <div class="citations">
+      <a
+        href="https://www.flaticon.com/free-icons/registry"
+        title="registry icons"
+        target="_blank"
+        >Registry icons created by Abbasi - Flaticon</a
+      >
+    </div>
+    </footer>
+    <!-- Codes End -->
+  </body>
+</html>
