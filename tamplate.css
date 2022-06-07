@@ -5,6 +5,11 @@
 }
 
 body{
+    background-color: black;
+    color: white;
+    padding-top: 4rem;
+    text-align: center;
+    vertical-align: middle;
     position: relative;
 }
 
