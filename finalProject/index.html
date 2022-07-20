@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <!-- Title -->
+    <title>TheGame</title>
+
+    <!-- Turkce karakter -->
+    <meta charset="utf-8" />
+
+    <!-- responsive design -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+
+    <!-- seo -->
+    <meta name="keywords" content="html5,css3,js,jquery,bootstrap,es5,es6" />
+    <meta
+      name="description"
+      content="Final Project,one pages,html5,css3,js,jquery,bootstrap"/>
+    <meta name="author" content="Utku Kantekin" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.PNG" type="image/x-icon">
+
+    <!-- Font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jquery UI -->
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    
+    <!-- bxslider JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <!-- bxslider css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./template.css" />
+
+    <!-- External JS -->
+    <script src="./template.js"></script>
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
+
+    <!-- wow js -->
+    <script src="./assets/js/wow.min.js"></script>
+
+    <script> new WOW().init() </script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header id="header">
+      <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark" id="navBar">
+        <!-- container wrapper -->
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">TheGame</a>
+          </div>
+          <!-- collepsible wrapper -->
+          <div class="collapse navbar-collapse row gx-0" id="navbarCollapse">
+            <ul class="navbar-nav col">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#aboutSec"
+                  id="aboutMain"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="aboutMain">
+                  <li>
+                    <a href="#aboutGame" class="dropdown-item">Game</a>
+                  </li>
+                  <li>
+                    <a href="#aboutTeam" class="dropdown-item">Dev. Team</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#sectionsSec" class="nav-link">Sections</a>
+              </li>
+              <li class="nav-item">
+                <a href="#classesSec" class="nav-link">Classes</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <!-- search input -->
+            <div class="d-flex justify-content-end col " id="leftSide" style="overflow-x: hidden;">
+              <form action="" class="d-inline-flex navbar-form" role="search" id="searchForm">
+                <input
+                  type="search"
+                  class="form-control ui-autocomplate me-1"
+                  placeholder="Search"
+                  aria-label="Search"
+                  id="searchInput"
+                />
+                <button class="btn btn-success" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+  
+              <!-- left links -->
+              <div class="d-flex align-items-center mx-3" id="leftLinks">
+                <!-- modals -->
+                <button
+                  type="button"
+                  class="btn btn-outline-primary me-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#login"
+                >
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#register"
+                >
+                  Register
+                </button>
+                <a
+                  href="https://github.com/utkukantekin"
+                  class="btn btn-light mx-3 px-2 py-1"
+                  role="button"
+                  ><i class="fa-brands fa-github" style="color: rgb(0, 0, 0)"></i
+                ></a>
+            </div>
+            </div>
+          </div>
+          <!-- collepsible wrapper end -->
+        </div>
+        <!-- container wrapper end -->
+      </nav>
+    </header>
+
+    <!-- login modal -->
+    <div
+      class="modal fade"
+      id="login"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="loginTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header ">
+            <p class="modal-title fs-3" id="loginTitle">Login</p>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="loginForm">
+              <div class="container">
+                <div class="row mb-1">
+                  <span class="col-form-label col-md-1 pe-0 d-flex justify-content-center align-items-center" id="mailLabel"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></span>
+                  <div class="col-md-4" id="mailCol">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="mail"
+                      name="mail"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <span class="col-md-2 pt-2 d-flex justify-content-center" id="orBetween">Or</span>
+                  <span
+                   class="col-form-label col-md-1 pe-0 d-flex justify-content-center align-items-center"
+                   id="userLabel"
+                    ><i class="fa-solid fa-user-astronaut"></i></span>
+                  <div class="col-md-4" id="userCol">
+                      <input
+                      type="text"
+                      class="form-control"
+                      id="userName"
+                      name="userName"
+                      placeholder="User Name"
+                      />
+                    </div>
+                </div>
+                <div class="row mb-1">
+                  <label for="password" class="col-form-label col-md-1 pe-0 d-flex justify-content-center align-items-center"
+                    ><i class="fa-solid fa-lock"></i></label>
+                  <div class="col-md-11">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      name="password"
+                      placeholder="Password"
+                    />
+                  </div>
+                </div>
+                <div class="row my-3">
+                  <div class="col">
+                    <a href="#">Forgot Password?</a>
+                  </div>
+                  <div class="col d-flex justify-content-end"><a href="#">Need More Help?</a></div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-1 pe-0 d-flex justify-content-center">
+                    <div class="px-2 py-1 border" style="border-radius: 30%; background-color:rgb(13, 202, 240);">
+                      <input class="form-check-input" type="checkbox" value="" id="rememberMe" name="rememberMe">
+                    </div>
+                  </div>
+                  <label class="col-md-3 d-flex align-items-center" for="rememberMe">Remember Me</label>
+                </div>
+                <div class="row mb-1 d-flex justify-content-center">
+                  <div class="col-md-10">
+                    <input type="submit" onclick="loginBtn()" class="form-control btn btn-outline-success" value="ENTER" id="loginBtn">
+                  </div>
+                </div>
+                <div class="row d-flex align-items-center justify-content-center my-3">
+                  <div class="col-md-10" id="loginInfo"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- login modal end -->
+
+    <!-- registry modal -->
+    <div
+      class="modal fade"
+      id="register"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="registerTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="modal-title fs-3" id="registerTitle">Register</p>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="registryBody">
+            <form>
+              <div class="container">
+                <div class="row mb-1 g-0">
+                  <label for="registerMail" class="col-form-label col-md-1"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></label>
+                  <div class="col-md-10">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="registerMail"
+                      name="registerMail"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="col-md-1 pt-1 fs-4 ps-2 signHolder" id="signMail">
+                    <i class="fa-solid fa-circle-minus"></i>
+                  </div>
+                </div>
+                <div class="row mb-1 g-0">
+                  <label for="registerUserName" class="col-form-label col-md-1"
+                    ><i class="fa-solid fa-user-astronaut"></i></label>
+                  <div class="col-md-10" id="inputDiv">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="registerUserName"
+                      name="registerUserName"
+                      placeholder="Create User Name"
+                    />
+                  </div>
+                  <div class="col-md-1 pt-1 signHolder fs-4 ps-2" id="signUName">
+                    <i class="fa-solid fa-circle-minus"></i>
+                  </div>
+                </div>
+                <div class="row mb-1 g-0">
+                  <label for="firstPassword" class="col-form-label col-md-1"><i class="fa-solid fa-lock"></i></label>
+                  <div class="col-md-10">
+                    <input type="password" class="form-control" id="firstPassword" name="firstPassword" placeholder="Create Password">
+                  </div>
+                  <div class="col-md-1 pt-1 signHolder fs-4 ps-2" id="signFPassword">
+                    <i class="fa-solid fa-circle-minus"></i>
+                  </div>
+                </div>
+                <div class="row mb-1 g-0">
+                  <label for="secondPassword" class="col-form-label col-md-1"><i class="fa-solid fa-check"></i></label>
+                  <div class="col-md-10">
+                    <input type="password" class="form-control" id="secondPassword" name="secondPassword" placeholder="Enter Password Again">
+                  </div>
+                  <div class="col-md-1 pt-1 signHolder fs-4 ps-2" id="signSPassword">
+                    <i class="fa-solid fa-circle-minus"></i>
+                  </div>
+                </div>
+                </div>
+                <div class="row mb-1 d-flex justify-content-center">
+                  <div class="col-md-10 d-flex justify-content-center" id="passwordCheck"></div>
+                </div>
+                <div class="row mb-1 px-2">
+                  <button class="btn btn-primary" id="regSubmit">SUBMIT</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- registry modal end -->
+
+    <!-- jumbotron -->  
+    <section>
+      <div class="jumbotron-fluid">
+        <div class="container">
+          <div class="p-5 text-center text-light" style="opacity: 0.7;">
+            <div class="d-flex justify-content-center">
+              <ul class="bxslider m-0 p-0">
+                <li>
+                  <p class="display-3 slide-text">Welcome</p>
+                  <p class="fs-4 slide-text">To</p>
+                </li>
+                <li>
+                  <p class="display-3 slide-text">get ready</p>
+                  <p class="fs-4 slide-text">for</p>
+                </li>
+              </ul>
+            </div>
+            <h1 class="display-3">TheGame</h1>
+            <a href="#" class="btn btn-outline-warning btn-sm shadow">Follow Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- jumbotron end -->  
+    <div class="main" data-bs-spy="scroll" data-bs-target="#navBar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      <!-- about -->  
+      <section class="full-wiev" id="aboutSec">
+        <div id="wrapAbout">
+          <ul id="bxAbout">
+            <li id="aboutGame">
+              <div class="d-flex justify-content-center pt-5">
+                <p class="display-4">About TheGame</p>
+              </div>
+              <div class="container">
+                <div class="row g-3">
+                  <div class="col">
+                    <p class="line-clamp3" style="text-indent: 3rem;"> <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempora omnis sed repellat, possimus debitis, veniam animi voluptate voluptatum explicabo totam tenetur perspiciatis dolores repudiandae, amet commodi dolor vero neque?
+                    Enim aliquam, deleniti aut, distinctio repudiandae vero nihil nostrum quae similique molestias quasi consequatur commodi nam vel veritatis id velit eos nesciunt qui autem eveniet ipsum. Nesciunt dolorem inventore neque?
+                    Consequuntur nesciunt quibusdam, quo rem tempore nam maxime inventore eum reiciendis recusandae natus ratione, quaerat excepturi. Ipsum perferendis, accusantium nam aperiam, sed, adipisci commodi numquam vero deleniti in reiciendis natus.</strong></p>
+                  </div>
+                  <div class="col d-flex justify-content-center wow fadeIn">
+                    <img src="https://unsplash.it/400/400" alt="poster">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="aboutTeam">
+              <div class="container" style="height:100vh ;">
+                <div class="row" style="height: 70%;">
+                  <div class="col-md-3 pt-5">
+                    <div class="card">
+                      <img src="assets/images/me.jpg" class="card-img-top" alt="photo of myself">
+                      <div class="card-body">
+                        <h5 class="card-title text-dark">Utku Kantekin</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-dark">that's me!</h6>
+                        <p class="card-text text-dark line_clamp3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolore!</p>
+                      </div>
+                      <div class="card-footer text-center">
+                        <a href="#aboutMe" class="btn btn-warning" id="meBtn">More About Me</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 pt-5">
+                    <div class="card">
+                      <img src="https://unsplash.it/400/400" class="card-img-top" alt="photo of myself">
+                      <div class="card-body">
+                        <h5 class="card-title text-dark">Lorem, ipsum.</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-dark">Lorem.</h6>
+                        <p class="card-text text-dark line_clamp3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolore!</p>
+                      </div>
+                      <div class="card-footer text-center">
+                        <a href="#" class="btn btn-warning">More About Me</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 pt-5">
+                    <div class="card">
+                      <img src="https://unsplash.it/400/400" class="card-img-top" alt="photo of myself">
+                      <div class="card-body">
+                        <h5 class="card-title text-dark">Lorem, ipsum.</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-dark">Lorem.</h6>
+                        <p class="card-text text-dark line_clamp3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolore!</p>
+                      </div>
+                      <div class="card-footer text-center">
+                        <a href="#" class="btn btn-warning">More About Me</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 pt-5">
+                    <div class="card">
+                      <img src="https://unsplash.it/400/400" class="card-img-top" alt="photo of myself">
+                      <div class="card-body">
+                        <h5 class="card-title text-dark">Lorem, ipsum.</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-dark">Lorem.</h6>
+                        <p class="card-text text-dark line_clamp3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolore!</p>
+                      </div>
+                      <div class="card-footer text-center">
+                        <a href="#" class="btn btn-warning">More About Me</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pt-5" id="counter">
+                  <div class="col-md-2 pt-3 ">
+                    <div class="d-flex justify-content-center my-2">
+                      <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <p class="text-center m-0">999</p>
+                    <p class="text-center m-0 fw-bold text-info">Hour Of Work</p>
+
+                  </div>
+                  <div class="col-md-2 pt-3 ">
+                    <div class="d-flex justify-content-center my-2">
+                      <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <p class="text-center m-0">999</p>
+                    <p class="text-center m-0 fw-bold text-info">Cups Of Coffee</p>
+
+                  </div>
+                  <div class="col-md-2 pt-3 ">
+                    <div class="d-flex justify-content-center my-2">
+                      <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <p class="text-center m-0">999</p>
+                    <p class="text-center m-0 fw-bold text-info">Awards</p>
+
+                  </div>
+                  <div class="col-md-2 pt-3 ">
+                    <div class="d-flex justify-content-center my-2">
+                      <i class="fa-solid fa-code"></i>
+                    </div>
+                    <p class="text-center m-0">999</p>
+                    <p class="text-center m-0 fw-bold text-info">Lines Of Code</p>
+
+                  </div>
+                  <div class="col-md-2 pt-3">
+                    <div class="d-flex justify-content-center my-2">
+                      <i class="fa-solid fa-earth-africa"></i>
+                    </div>
+                    <p class="text-center m-0">999</p>
+                    <p class="text-center m-0 fw-bold text-info">Players Wordwide</p>
+
+                  </div>
+                  <div class="col-md-2 pt-3 ">
+                    <div class="d-flex justify-content-center my-2">
+                      <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <p class="text-center m-0">999</p>
+                    <p class="text-center m-0 fw-bold text-info">Project Delivered</p>
+
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- about end -->
+      <!-- aboutme -->
+      <section class="half-wiev d-none" id="aboutMe">
+        <div class="container" id="wrapMe">
+          <div class="row gx-3 py-4">
+            <div class="col p-3" style="background-color: rgb(255, 255, 255); border-radius: 10%;">
+              <p id="talent">HTML5, CSS3, JS, and some more. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio sit ex voluptatibus quaerat alias, ipsam modi itaque fugiat sed ducimus laudantium eveniet reiciendis quod. Reprehenderit autem rem et neque?
+              Excepturi ad vitae, soluta sequi placeat voluptates illo dolores at distinctio aut fuga molestias accusamus reiciendis ducimus sit iste magnam esse dolorem, labore ipsum possimus eos unde libero! Omnis, itaque!
+              Magni ad corporis voluptate, enim tenetur quaerat! Velit quibusdam soluta totam quis repudiandae non fugit, odio mollitia libero, sunt porro dolores voluptatum, inventore nulla! Aut sed minus praesentium asperiores ducimus?</p>
+            </div>
+            <div class="col">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="assets/images/me.jpg" alt="my photo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <!-- abourme end -->
+      <!-- sections -->  
+      <section class="full-wiev" id="sectionsSec">
+        <div id="wrapSecs" class="text-light">
+          <ul id="bxSecs">
+            <!-- mordor -->
+            <li>
+              <div id="mordorSec" style="height: 100vh;">
+                <div class="row gx-0 p-5" id="wrapMordor">
+                  <div class="col-md-3 pt-5 wow bounceInUp">
+                    <p class="display-6">Mordor</p>
+                    <p>section lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi.</p>
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center justify-content-center wow bounceInDown">
+                    <img src="assets/images/mordor.png" alt="mordor flag">
+                  </div>
+                  <div class="col-md-3 pt-5 wow bounceInUp">
+                    <p class="display-6">Section Power</p>
+                    <p>Units from mordor gains bonus damage and defance in darkness and loses that bonus in light</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- gondor -->
+            <li>
+              <div id="gondorSec" style="height: 100vh;">
+                <div class="row gx-0 p-5" id="wrapGondor">
+                  <div class="col-md-3 pt-5 wow bounceInUp">
+                    <p class="display-6">Gondor</p>
+                    <p>section lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi.</p>
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center justify-content-center wow bounceInDown">
+                    <img src="assets/images/gondor.png" alt="gondor flag">
+                  </div>
+                  <div class="col-md-3 pt-5 wow bounceInUp">
+                    <p class="display-6">Section Power</p>
+                    <p>gondorian units gain bonnus armor when they fight together</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- rohan -->
+            <li>
+              <div id="rohanSec" style="height: 100vh;">
+                <div class="row gx-0 p-5" id="wrapRohan">
+                  <div class="col-md-3 pt-5 wow bounceInUp">
+                    <p class="display-6">Rohan</p>
+                    <p>section lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi.</p>
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center justify-content-center wow bounceInDown">
+                    <img src="assets/images/rohan.jpg" alt="rohan flag">
+                  </div>
+                  <div class="col-md-3 pt-5 wow bounceInUp">
+                    <p class="display-6">Section Power</p>
+                    <p>the Rohirrim gains swiftness when thet fight side by side</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- rivendell -->
+            <li>
+              <div id="rivendellSec" style="height: 100vh;">
+                <div class="row gx-0 p-5" id="wrapRivendell">
+                  <div class="col-md-3 pt-5 wow bounceInUp">
+                    <p class="display-6">Rivendell</p>
+                    <p>section lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi.</p>
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center justify-content-center wow bounceInDown">
+                    <img src="assets/images/rivendell.jpg" alt="rivendell flag">
+                  </div>
+                  <div class="col-md-3 pt-5 wow bounceInUp">
+                    <p class="display-6">Section Power</p>
+                    <p>Elves of Rivendell gains harmony when they fight together.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- sections end -->  
+      <!-- classes -->  
+      <section class="full-wiev" id="classesSec">
+        <div id="wrapClasses">
+          <div class="row half-wiev pt-5" >
+            <div class="col wow fadeIn">
+              <p class="display-6 text-center text-uppercase">Warrıors</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime blanditiis, delectus tempore nemo ratione.</p>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center wow slideInRight" style="min-height:40vh">
+              <img src="assets/images/warrior-helmet.png" alt="warrior-helmet">
+            </div>
+          </div>
+          <div class="row half-wiev pt-3" style="background-color: rgb(165, 192, 219, .5);">
+            <div class="col d-flex justify-content-center align-items-center wow slideInLeft" style="min-height:40vh">
+              <img src="assets/images/katana.png" alt="katana">
+            </div>
+            <div class="col wow fadeIn">
+              <p class="display-6 text-center text-uppercase">Assassıns</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ad ullam praesentium fugiat. Earum, magnam.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- classes end -->  
+      <!-- contact -->  
+      <section class="full-wiev" id="contact">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center text-uppercase text-dark">Contact</h2>
+                </div>
+                <div class="col-md-6">
+                    <form action="#!" id="contact_form">
+                        <div class="row gx-0">
+                            <div class="col-md-6">
+                                <input type="text" placeholder="First Name" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Last Name" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Number" class="form-control" pattern="[0-9]+">
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message"
+                                        placeholder="Your message..." required=""></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <button type="reset" class="btn btn-danger">Clear </button>
+                                    <button type="submit" class="btn btn-primary">Send Message </button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div id="map">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            width="100%" height="420px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </section>
+      <!-- contact end -->  
+      <a href="#header" class="btn btn-warning" id="scrollUp">Up!</a>
+    </div>
+
+    <footer>
+      <!-- footer share -->
+      <section id="shareBtnWrapper">
+        <button class="btn btn-warning" id="shareBtn"><i class="fa-solid fa-share-nodes"></i></button>
+        <ul class="shareList">
+          <li class="shareItem d-none" id="shareIns">
+            <a href="" class="btn btn-outline-success shareLink"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li class="shareItem d-none" id="shareTwit">
+            <a href="" class="btn btn-outline-success shareLink"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li class="shareItem d-none" id="shareFace">
+            <a href="" class="btn btn-outline-success shareLink"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+        </ul>
+      </section>
+      <!-- footer share end -->
+      <!-- tab 2 -->
+      <section>
+        <div class="container">
+          <div class="row gx-0">
+            <div class="col-md-3 footerTab text-center">
+              <div class="d-flex justify-content-center" id="dateBtnHolder">
+                <button onclick="showDate()" class="btn btn-outline-danger" id="dateBtn">Show Date!</button> 
+              </div>
+              <div class="d-none my-3" id="dateHere"></div>
+            </div>
+            <div class="col-md-3 footerTab">
+
+            </div>
+            <div class="col-md-3 footerTab">
+
+            </div>
+            <div class="col-md-3 footerTab">
+              <h6 class="text-uppercase mb-3">Contact</h6>
+              <p class="mx-0"><i class="fa-solid fa-earth-africa"></i> Turkey</p>
+              <p class="mx-0"><i class="fa-solid fa-envelope-open-text"></i>
+                  <a href="mailto:utkukantekin97@gmail.com">utkukantekin97@gmail.com</a>
+              </p>
+              <p class="mx-0"><i class="fa-solid fa-mobile-retro"></i>
+                  <a href="tel:905522542993">+90 552 254 29 93</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
